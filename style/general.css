@@ -34,10 +34,9 @@ main{
     gap: 1rem;
 }
 
-header h1 a{
+header h1{
     color: var(--text);
     transition: none;
-    text-decoration: none;
 }
 
 
@@ -54,6 +53,17 @@ header{
     padding: 1rem 2rem;
     background-color: var(--secondary);
 }
+
+header a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    text-decoration: none;
+}
+
 
 h1,h2, h3, h4,p{
     transition: color 0.75s ease-in-out;
