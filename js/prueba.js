@@ -3,11 +3,9 @@ function comprobar(L){
     var r = document.getElementById("respuesta").value;
     var pass = false;
     if (L == 'A'){
-        if(r == 4232){
-            pass= true;
-        }
+        if(r == 4232) pass = true;
     }else if(L == 'B'){
-        alert("Prueba B");
+        if(r == 10) pass = true;
     }else if(L == 'C'){
         alert("Prueba C");
     }else if(L == 'D'){

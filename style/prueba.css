@@ -19,9 +19,8 @@
 }
 
 .pregunta{
-    font-size: 1.1rem;
-    color: #ff0000;
-    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #ff6868;
 }
 
 .comprobar{
@@ -52,22 +51,19 @@
 
 #comprobar-form input:not([type="submit"]){
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     border-radius: 8px;
     margin: 0.5rem 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--text);
     font-family: 'Roboto Mono', monospace;
     background-color: transparent;
     border: 1px solid var(--text);
-    /*Quitamos las flechas del input*/
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /*Quitamos el spinner del input*/
     -moz-appearance: textfield;
-    /*Quitamos el spinner del input*/
 }
 
 #comprobar-form input[type="submit"]{

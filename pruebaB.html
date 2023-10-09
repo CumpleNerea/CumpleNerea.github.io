@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/prueba.css">
+    <script src="js/prueba.js"></script>
 
 </head>
 <body>
@@ -18,9 +19,28 @@
             <h1>Página 1610</h1>
         </a>
     </header>
-    <div class="titulo-prueba">
-        <h1>Prueba B</h1>
-    </div>
+    <body>
+        <div class="titulo-prueba">
+            <h1>Prueba B</h1>
+            <h2>Analizar las heridas</h2>
+        </div>
+        <div class="explicacion">
+            <p>> Parece ser que el ambiente el ambiente en la familia de Joaquín no siempre fue bueno...</p>
+            <p>> Hemos observado que Joan tenía unas marcas en las manos, ¿no es así? Han llegado unas muestras de esas marcas. Analízalas.  </p>
+            <p class="pregunta">Analiza las marcas, ¿qué puedes ver?</p>
+            <p>Si necesitas una pista, <a href="https://morsecode.world/international/translator.html" target="_blank"> pulsa aquí </a></a></p>
+        </div>
+       
+        <div class="comprobar">
+            <div class="comprobar-wrapper">
+                <h2>¿He acertado?</h2>
+                <h3>Introduce el número obtenido aquí:</h3>
+                <form id="comprobar-form" onsubmit="comprobar('B')" method="post">
+                    <input id="respuesta" type="number" name="respuesta" value="1" >
+                    <input type="submit" value="Comprobar">
+                </form>
+            </div>
+        </div>
+    </body>
 </body>
 </html>
-

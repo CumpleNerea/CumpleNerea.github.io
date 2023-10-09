@@ -1,6 +1,7 @@
 :root{
     --background: #0f0f0f;
-    --text: #00ff00;
+    --text: #32ff32;
+    --text-link: #92ddff;
     --secondary: #1f1f1f;
     --secondary-hover: #2f2f2f;
     --tertiary: #2f2f2f;
@@ -48,6 +49,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     color: #fff;
+}
+
+a{
+    color: var(--text-link);
 }
 
 header{
