@@ -14,8 +14,6 @@ function comprobar(L){
         alert("Prueba E");
     }else if(L == 'F'){
         alert("Prueba F");
-    }else if(L == 'G'){
-        alert("Prueba G");
     }else{
         alert("Prueba no encontrada");
     }
