@@ -7,7 +7,7 @@ function comprobar(L){
     }else if(L == 'B'){
         if(r == 10) pass = true;
     }else if(L == 'C'){
-        alert("Prueba C");
+        if(r == 2027) pass = true;
     }else if(L == 'D'){
         alert("Prueba D");
     }else if(L == 'E'){

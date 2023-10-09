@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/prueba.css">
+    <script src="js/prueba.js"></script>
 
 </head>
 <body>
@@ -18,9 +19,29 @@
             <h1>Página 1610</h1>
         </a>
     </header>
-    <div class="titulo-prueba">
-        <h1>Prueba C</h1>
-    </div>
+    <body>
+        <div class="titulo-prueba">
+            <h1>Prueba C</h1>
+            <h2>La hora exacta</h2>
+        </div>
+        <div class="explicacion">
+            <p>> Tras analizar las marcas de Joan y preguntarle cómo se las hizo, nos ha confesado que se las hizo cuando mantenía relaciones sexuales con Lara Tona... ¡Qué decepción! Estábamos tan cerca.</p>
+            <p>> Gracias a los testimonios de los acusados, y a los análisis de sangre que vamos a realizar, podríamos conseguir la hora exacta a la que murió Joaquín.  </p>
+            <p class="pregunta">Toma la lupa, y analiza la sangre, ¿qué ves?</p>
+        </div>
+       
+        <div class="comprobar">
+            <div class="comprobar-wrapper">
+                <h2>¿He acertado?</h2>
+                <h3>Introduce el número obtenido aquí:</h3>
+                <form id="comprobar-form" onsubmit="comprobar('C')" method="post">
+                    <input id="respuesta" type="number" name="respuesta" value="1" >
+                    <input type="submit" value="Comprobar">
+                </form>
+            </div>
+        </div>
+
+        <!--Si estás leyendo esto, eres hacker! La respuesta es a las 20:27-->
+    </body>
 </body>
 </html>
-
