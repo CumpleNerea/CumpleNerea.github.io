@@ -9,7 +9,7 @@ function comprobar(L){
     }else if(L == 'C'){
         if(r == 2027) pass = true;
     }else if(L == 'D'){
-        alert("Prueba D");
+        if(r == 66) pass = true;
     }else if(L == 'E'){
         alert("Prueba E");
     }else if(L == 'F'){

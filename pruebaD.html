@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/prueba.css">
+    <script src="js/prueba.js"></script>
 
 </head>
 <body>
@@ -18,9 +19,36 @@
             <h1>Página 1610</h1>
         </a>
     </header>
-    <div class="titulo-prueba">
-        <h1>Prueba D</h1>
-    </div>
+    <body>
+        <div class="titulo-prueba">
+            <h1>Prueba D</h1>
+            <h2>Respuesta de una palabra</h2>
+        </div>
+        <div class="explicacion">
+            <p>> ¡La hora de la muerte de Joaquín ha sido de gran ayuda! Sin embargo, necesitamos más pistas que nos lleven al motivo y causante de su muerte...</p>
+            <p>> Hemos recibido un chivatazo por correo electrónico de cuál podría ser el motivo de la muerte. Sin embargo... ¡Este mensaje está cifrado!</p>
+            <p>> Todo el equipo de investigación está trabajando en descifrarlo, y a ti se te ha encargado una pequeña parte del mensaje para que colabores.  </p>
+            <p class="pregunta">¡Descifra el mensaje!</p>
+        </div>
+        <div class="codigos">
+            <img src="assets/img/codigos.jpg" alt="Resolución de los códigos">
+        </div>
+        <div class="codigos">
+            <img src="assets/img/mensaje.png" alt="Mensaje cifrado">
+        </div>
+       
+        <div class="comprobar">
+            <div class="comprobar-wrapper">
+                <h2>¿He acertado?</h2>
+                <h3>Introduce el número obtenido aquí:</h3>
+                <form id="comprobar-form" onsubmit="comprobar('D')" method="post">
+                    <input id="respuesta" type="number" name="respuesta" value="1" >
+                    <input type="submit" value="Comprobar">
+                </form>
+            </div>
+        </div>
+
+        <!--Si estás leyendo esto, eres hacker! La respuesta es 66-->
+    </body>
 </body>
 </html>
-

@@ -84,3 +84,18 @@
 #comprobar-form input[type="submit"]:hover{
     background-color: var(--secondary-hover);
 }
+
+.codigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.codigos img{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
