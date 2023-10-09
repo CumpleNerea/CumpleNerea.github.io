@@ -24,20 +24,67 @@
     padding: 1rem 2rem;
 }
 
-.decoracion-wrapper{
+.comprobar{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 2rem;
 }
 
-.card{
-    max-width: 86px;
-    margin: 1rem 0;
+.comprobar-wrapper{
+    background-color: var(--quaternary);
     padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+    
+#comprobar-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#comprobar-form input:not([type="submit"]){
+    width: 100%;
+    padding: 2rem 1rem;
     border-radius: 8px;
-    background-color: #fff;
-    color: #000;
-    font-size: 3em;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text);
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    /*Quitamos las flechas del input*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*Quitamos el spinner del input*/
+    -moz-appearance: textfield;
+    /*Quitamos el spinner del input*/
+}
+
+#comprobar-form input[type="submit"]{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
+    border: none;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: var(--secondary);
+    color: var(--text);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#comprobar-form input[type="submit"]:hover{
+    background-color: var(--secondary-hover);
 }

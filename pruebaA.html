@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/prueba.css">
+    <script src="js/prueba.js"></script>
 
 </head>
 <body>
@@ -29,27 +30,18 @@
             <p>> Toma las tarjetas de letras y ordena su nombre de pila. Hecho esto, dale la vuelta a las tarjetas (sin cambiar su orden). Ese será el número de la prueba A. </p>
             <p>> El número que aparece al lado de la letra es el orden de la vocal. Es decir, si el nombre es "PILI", como puedes ver hay dos "I". Bien, pues la "I" que tenga el número 1 irá antes de la "I" que tenga el numero 2.</p>
         </div>
-        <div class="decoracion-wrapper">
-            <div class="row">
-                <div class="card">
-                    <p>T</p>
-                </div>
-                <div class="card">
-                    <p>E</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <p>A</p>
-                </div> 
-                <div class="card">
-                    <p>M</p>
-                </div>
-                <div class="card">
-                    <p>O</p>
-                </div>
+       
+        <div class="comprobar">
+            <div class="comprobar-wrapper">
+                <h2>¿He acertado?</h2>
+                <h3>Introduce el número obtenido aquí:</h3>
+                <form id="comprobar-form" onsubmit="comprobar('A')" method="post">
+                    <input id="respuesta" type="number" name="respuesta" value="1" >
+                    <input type="submit" value="Comprobar">
+                </form>
             </div>
         </div>
+        
         <!--Si estás leyendo esto, eres hacker! La persona es LARA y la combinación es 4232-->
     </body>
 </body>
