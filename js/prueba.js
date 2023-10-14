@@ -11,7 +11,7 @@ function comprobar(L){
     }else if(L == 'D'){
         if(r == 66) pass = true;
     }else if(L == 'E'){
-        alert("Prueba E");
+        if (r == 122) pass = true;
     }else if(L == 'F'){
         alert("Prueba F");
     }else{
@@ -19,8 +19,34 @@ function comprobar(L){
     }
     
     if(pass==true){
-        alert("¡Has acertado! Enhorabuena.");
+        alert("¡Has acertado! Enhorabuena. El módulo de "+ r +" es "+ r%9 +".");
     }else{
         alert("No has acertado, vuelve a intentarlo.");
     }
 }
+
+function desencriptarMensaje(){
+    var e = document.getElementById("mensaje_encriptado");
+    var m = document.getElementById("mensaje_desencriptado");
+    var b = document.getElementById("boton_desencriptar");
+
+    // Agitamos el mensaje encriptado
+    e.classList.add("shake");
+    setTimeout(function(){
+        e.classList.remove("shake");
+    }, 500);
+
+    e.classList.add("hidden");
+    m.classList.remove("hidden");
+
+    // Lo agitamos
+    m.classList.add("shake");
+    setTimeout(function(){
+        m.classList.remove("shake");
+    }, 500);
+
+    b.setAttribute("disabled", "disabled");
+    b.setAttribute("style", "background-color: #1f1f1f;")
+
+}
+

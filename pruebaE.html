@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
     <!--CSS-->
     <link rel="stylesheet" href="style/general.css">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/prueba.css">
+    <script src="js/prueba.js"></script>
 
 </head>
 <body>
@@ -18,9 +19,32 @@
             <h1>Página 1610</h1>
         </a>
     </header>
-    <div class="titulo-prueba">
-        <h1>Prueba E</h1>
-    </div>
+    <body>
+        <div class="titulo-prueba">
+            <h1>Prueba E</h1>
+            <h2>Sopa de pruebas</h2>
+        </div>
+        <div class="explicacion">
+            <p>> ¡Vaya! Parece ser que la parte que te correspondía resolver a ti no tenía ningún tipo de conexión con el mensaje. 
+                Sin embargo, el equipo de investigación ha descubierto algo... El mensaje es el siguiente:</p>
+            <p id="mensaje_encriptado">> CqcBCAE SogEzC iEFjq O6 sIPaTd bABgCInBe9cq N 67D0 zQD24gE o3mtCy0B+h 07PErsn qoATUR oUcyzyA/sDneK ASJDgzN jg0YjU2 LWUxNmIt NDUyYi 05ODY0LW U4Yj UzNDI2Nzg4OA==</p>
+            <p id="mensaje_desencriptado" class="hidden">> <q><i>Quien asesinó a Joaquín, lo hizo para ocultar una infidelidad. Alguien no quiere que todo el mundo lo sepa. REVISA su FICHA policial.</i></q></p>
+            <button id="boton_desencriptar" onclick="desencriptarMensaje()">Desencriptar mensaje</button>
+            <p class="pregunta">¡El mensaje encriptado te llevará a tu número!</p>
+            <p>> ¿Quién podría ser capaz de hacer algo así?</p>
+        </div>
+        <div class="comprobar">
+            <div class="comprobar-wrapper">
+                <h2>¿He acertado?</h2>
+                <h3>Introduce el número obtenido aquí:</h3>
+                <form id="comprobar-form" onsubmit="comprobar('E')" method="post">
+                    <input id="respuesta" type="number" name="respuesta" value="1" >
+                    <input type="submit" value="Comprobar">
+                </form>
+            </div>
+        </div>
+
+        <!--Si estás leyendo esto, eres hacker! La respuesta es 122 -->
+    </body>
 </body>
 </html>
-
