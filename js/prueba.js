@@ -13,7 +13,7 @@ function comprobar(L){
     }else if(L == 'E'){
         if (r == 122) pass = true;
     }else if(L == 'F'){
-        alert("Prueba F");
+        if(r == 9) pass = true;
     }else{
         alert("Prueba no encontrada");
     }
@@ -36,10 +36,11 @@ function desencriptarMensaje(){
         e.classList.remove("shake");
     }, 500);
 
+    // Cambiamos el mensaje encriptado por el desencriptado
     e.classList.add("hidden");
     m.classList.remove("hidden");
 
-    // Lo agitamos
+    // Agitamos el mensaje desencriptado
     m.classList.add("shake");
     setTimeout(function(){
         m.classList.remove("shake");

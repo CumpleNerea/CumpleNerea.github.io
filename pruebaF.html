@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/prueba.css">
+    <script src="js/prueba.js"></script>
 
 </head>
 <body>
@@ -18,9 +19,39 @@
             <h1>Página 1610</h1>
         </a>
     </header>
-    <div class="titulo-prueba">
-        <h1>Prueba F</h1>
-    </div>
+    <body>
+        <div class="titulo-prueba">
+            <h1>Prueba F</h1>
+            <h2>¡Ya casi está!</h2>
+        </div>
+        <div class="explicacion">
+            <p>> Tras una árdua investigación, ¡ya sabemos quién asesinó a Joaquín, y con qué motivo lo hizo! Su muerte está encriptada para evitar "spoilers" ;) </p>
+            <p id="mensaje_encriptado">iirXshT Gu9PuNrh DuKK/Vk4tS4Y3 zG4 45or/io8DQl  d3IwoU 9F wisL6 EnakXSzOBm BWsY p+3bMEc9M  hoW pejD8/ qx33g+S01 0gx q7YZv hh3CR WumKQ WEsUU+5 elD G9 IW1u 6eqgFqJA</p>
+            <p id="mensaje_desencriptado" class="hidden">>
+                <q><i></i>Su madre, Devo, esperaría a que su hijo volviese de la universidad para asesinarlo.
+                Fingiría un suicidio para no levantar sospechas. Esto lo hizo bajo las amenazas de Ana, quien no quería que nadie supiese la verdad.
+                </i></q></p>
+            <button id="boton_desencriptar" onclick="desencriptarMensaje()">Desencriptar mensaje</button>
+            <p>> ¡Lo único que falta es arrestar a la persona culpable del asesinato de Joaquín. Para arrestarle, han comprado unas esposas con combinación de colores.</p>
+            <p>> Te han indicado que debes colocar las tarjetas en el orden numérico, y después por orden del color. 
+                Las flechas indican donde debes poner la siguiente tarjeta. 
+                El orden cromático es el siguiente: azul, amarillo, rosa.</p>
+            <p class="pregunta">¡Ordena las tarjetas!</p>
+            <p>> Esta es la prueba más fácil, para compensar esta tortura ;) Lo único malo es que hay tarjetas de relleno... </p>
+            <p>> ¡Gracias por jugar a este escape room! Espero que te haya gustado tanto resolverlo como a mi hacerlo. Te amo.</p>
+        </div>
+        <div class="comprobar">
+            <div class="comprobar-wrapper">
+                <h2>¿He acertado?</h2>
+                <h3>Introduce el número obtenido aquí:</h3>
+                <form id="comprobar-form" onsubmit="comprobar('F')" method="post">
+                    <input id="respuesta" type="number" name="respuesta" value="1" >
+                    <input type="submit" value="Comprobar">
+                </form>
+            </div>
+        </div>
+
+        <!--Si estás leyendo esto, eres hacker! La respuesta es 9 -->
+    </body>
 </body>
 </html>
-
